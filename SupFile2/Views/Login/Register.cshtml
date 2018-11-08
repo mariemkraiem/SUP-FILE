@@ -1,0 +1,44 @@
+﻿@model SupFile2.Models.LoginModel
+@{
+    /**/
+
+    ViewBag.Title = "Login";
+}
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/folder")
+@Scripts.Render("~/bundles/datatable")
+@Scripts.Render("~/bundles/globalScript")
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Probleme lors de l'inscription, veullez verifier votre mail et mot de passe");
+    <div class="login-dark">
+        <div id="login-box">
+            <div class="left" style="padding-top:20px">
+                <form method="post">
+                    <h1>S'inscrire</h1>
+
+                    <input type="text" name="username" placeholder="Pseudo" />
+                    @Html.TextBoxFor(u => u.Email, new { @placeholder = "Email", @requried = "required" })
+                    @Html.TextBoxFor(u => u.Password, new { @placeholder = "Mot de passe", type = "password", @requried = "required" })
+                    @Html.TextBoxFor(u => u.Password, new { @placeholder = "Répéter votre mot de passe", type = "password", @requried = "required" })
+
+                    <input type="submit" name="signup_submit" value="S'inscrire" />
+                </form>
+            </div>
+
+            <div class="right">
+                <span class="loginwith">S'inscrire avec<br />réseaux sociaux</span>
+
+                <button class="social-signin facebook">@Html.ActionLink("Se connecter avec Facebook", "Facebook")</button>
+                <button class="social-signin google">@Html.ActionLink("Se connecter avec Google", "RedirectToGoogle")</button>
+            </div>
+
+            <div class="or">OU</div>
+        </div>
+    </div>
+}
+

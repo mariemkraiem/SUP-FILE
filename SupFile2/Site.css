@@ -1,0 +1,146 @@
+﻿
+/* Set padding to keep content from hitting the edges */
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
+
+.accordion.accordion-3 {
+    border-radius: 3px;
+}
+
+    .accordion.accordion-3 p {
+        font-size: 1rem;
+    }
+
+    .accordion.accordion-3 .fa.fa-angle-down {
+        margin-top: -10px;
+    }
+
+.accordion .animated-icon1 span {
+    background: #F44336;
+}
+.folderName
+{
+    font-size: 20px;
+}
+.navbar-inverse {
+    background-color:lightsalmon;
+    border-color:transparent;
+}
+.sidenav
+{
+    background-color:transparent;
+}
+.navbar-inverse .navbar-brand {
+    color: black;
+    font-size: x-large;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: white;
+    
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: black;
+    font-size: large;
+}
+
+.menu {
+    margin-top: 1%;
+}
+.contenue
+{
+    margin-top: 2%;
+}
+.navbar-nav
+{
+    margin-bottom:1%;
+}
+.navbar-brand
+{
+    padding : 0px 0px !important;
+}
+.logo
+{
+    margin-left: 25%;
+}
+
+.table-title
+{
+    font-size: 18px;
+    font-family: "Courier New", Times, Monospace;
+}
+
+.divider-vertical {
+    color: white;
+    font-weight: bold;
+}
+.tiret-separ 
+{
+    margin-top: 3%;
+}
+.itemLogo
+{
+    height :10%;
+    
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 0px !important
+}
+.addBtn {
+    border: 2px #c79b35 solid;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 10%;
+    border-radius: 10px;
+}

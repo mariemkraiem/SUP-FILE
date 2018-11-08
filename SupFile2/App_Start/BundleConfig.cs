@@ -1,0 +1,46 @@
+﻿using System.Web;
+using System.Web.Optimization;
+
+namespace SupFile2
+{
+    public class BundleConfig
+    {
+        // Pour plus d'informations sur le regroupement, visitez https://go.microsoft.com/fwlink/?LinkId=301862
+        public static void RegisterBundles(BundleCollection bundles)
+        {
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/jquery-{version}.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+                        "~/Scripts/jquery.validate*"));
+
+            // Utilisez la version de développement de Modernizr pour le développement et l'apprentissage. Puis, une fois
+            // prêt pour la production, utilisez l'outil de génération à l'adresse https://modernizr.com pour sélectionner uniquement les tests dont vous avez besoin.
+            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+                        "~/Scripts/modernizr-*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/respond.js"));
+            bundles.Add(new ScriptBundle("~/bundles/datatable").Include(
+                      "~/Scripts/datatable.js",
+                      "~/Scripts/datatable.min.js"));
+
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/login.css",
+                      "~/Content/product.css",
+                      "~/Content/signup.css",
+                      "~/Content/site.css",
+                      "~/Content/style.css"));
+            bundles.Add(new ScriptBundle("~/bundles/folder").Include(
+                "~/Scripts/FolderScript/folderScript.js"));
+
+
+            bundles.Add(new ScriptBundle("~/bundles/globalScript").Include(
+            "~/Scripts/globalScript.js"));
+
+            //bundles.Add(new BundleFile("~/modals/addFolder").IncludedVirtualPath)
+        }
+    }
+}

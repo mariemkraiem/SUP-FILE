@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Visualisation";
+}
+
+<h2>@ViewBag.FileName</h2>
+@if (ViewBag.Type == "image")
+{
+    <img src="/Home/GetFile?chemin=@ViewBag.Chemin&userName=@ViewBag.UserId"/>
+}
+else if (ViewBag.Type == "video")
+{
+    <video controls>
+        <source src="/Home/GetFile?chemin=@ViewBag.Chemin&userName=@ViewBag.UserId" />
+    </video>
+}
+else if (ViewBag.Type == "audio")
+{
+    <audio controls>
+        <source src="/Home/GetFile?chemin=@ViewBag.Chemin&userName=@ViewBag.UserId" />
+    </audio>
+}
+
